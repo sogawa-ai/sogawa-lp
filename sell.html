@@ -308,8 +308,6 @@
     <tr><th>社名</th><td>株式会社 祖川（Sogawa Group）</td></tr>
     <tr><th>事業内容</th><td>建設業（解体・リノベーション）／不動産買取・再販／不動産投資</td></tr>
     <tr><th>TEL</th><td>03-3538-7055（受付 9:00〜18:00）</td></tr>
-    <tr><th>Email</th><td>k-furusawa@sogawa.co.jp</td></tr>
-    <tr><th>担当</th><td>古澤</td></tr>
   </table>
 </section>
 
@@ -343,7 +341,7 @@ document.getElementById('submit').addEventListener('click', async () => {
     const data = await res.json();
     if (data && data.success) {
       document.getElementById('form-body').innerHTML =
-        '<div class="thanks"><h3>査定のご依頼を受け付けました</h3><p>担当（古澤）より1営業日以内にご連絡いたします。<br />お急ぎの場合は 03-3538-7055 までお電話ください。</p></div>';
+        '<div class="thanks"><h3>査定のご依頼を受け付けました</h3><p>担当者より1営業日以内にご連絡いたします。<br />お急ぎの場合は 03-3538-7055 までお電話ください。</p></div>';
     } else {
       alert((data && data.error) || '送信に失敗しました。時間をおいて再度お試しください。');
       btn.disabled = false; btn.textContent = '無料査定を依頼する';
