@@ -1,1 +1,9 @@
-
+{
+  "redirects": [
+    { "source": "/sell.html",   "destination": "https://sogawa.co.jp/estate/sell.html",   "permanent": true },
+    { "source": "/invest.html", "destination": "https://sogawa.co.jp/estate/invest.html", "permanent": true },
+    { "source": "/area",        "destination": "https://sogawa.co.jp/estate/area/",       "permanent": true },
+    { "source": "/area/:file*", "destination": "https://sogawa.co.jp/estate/area/:file*", "permanent": true },
+    { "source": "/(.*)",        "destination": "https://sogawa.co.jp/estate/",            "permanent": true }
+  ]
+}
